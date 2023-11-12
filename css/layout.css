@@ -1,11 +1,6 @@
 
 /*-- Estilos CSS - Website do IFSUL
-
-
-
 -- Padrões e Reset*/
-
-
 
 * {margin: 0; padding: 0;}        
 ul {list-style-type: none;}       
@@ -13,141 +8,132 @@ img, fieldset {border: 0;}
 h1, h2, h3, h4, h5, h6 {font-weight: normal;}  
   
 
-
-
-
 /*-- Tipografia e Cores
 
 14 - Estilizando Fontes*/ 
 
-body{
+body {
 	font-family: Verdana, sans-serif;
     background-color: black;
 }
 
 p {
-	font-size: 16px;
+	font-size: 1rem;
 	margin-bottom: 1.5em;
 	line-height: 1.4em;
     text-align: justify;
 }
 
 #conteudo-principal h1 {
-    font-size: 36px;
+    font-size: 2rem;
     margin-bottom: 0.5em;
-  }
- 
+} 
+
 #conteudo-principal h2,
+
 #conteudo-secundario h1 {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 0.5em;
 }
- 
+
 #conteudo-secundario p {
-    font-size: 14px;
+    font-size: 0.8rem;
 }
  
 #conteudo-principal ul,
 #conteudo-principal ol {
-    font-size: 16px;
+    font-size: 1rem;
     margin-left: 1.5em;
     margin-bottom: 1.5em;
 }
-p, h1, h2, ul, li, label{
+
+p, h1, h2, ul, li, label {
     color:white;
 }
-#campus h1{
+
+#campus h1, #sobre-curso h1, #missao h1 {
     text-align: center;
-    font-size: 36px;
-    padding-top: 5px;
+    font-size: 2.2rem;
+    padding-top: 0.3rem;
     padding-bottom: 2rem;
 }
-#campus{
-padding-top: 5px;
-color: white;
-}
-#campus p, #missao p{
-    font-size: 14px;
-    padding-left: 60px;
-    padding-right: 60px;
-    display: flex;; justify-content: center;
-}
-#sobre-curso h1, h2{
-    text-align: center;
-    font-size: 36px;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-#sobre-curso p{
-    font-size: 14px;
-    padding-left: 60px;
-    padding-right: 60px;
+
+#campus p, #missao p, #sobre-curso p {
+    font-size: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     display: flex; justify-content: center;
 }
-#cursos{
+
+#cursos {
     padding-left: 5rem;
-    font-size: 14px;
+    font-size: 1rem;
     float: left;
     width: 70%;
-}
-.img-cursos{
-    float: right;
-    width: 30%;
-    padding-right: 30px;
-    padding-bottom: 20px;
-    border-radius: 30px;
-}
-.container {
-overflow: hidden;
 }
 
 
 /*-- Estrutura
 
+2 e 3 -Lagura da página fixa 960px  
+margem superior e inferior 0 e esquerda e direita auto para central*/          
 
- 2 e 3 -Lagura da página fixa 960px  
- margem superior e inferior 0 e esquerda e direita auto para central*/                                 
-#conteudo{
-	width: 960px;          
+#conteudo {
+	width: 65%;          
 	margin: 0 auto;        
 }
-#cabecalho{
-    padding: 5px ;
+
+#cabecalho {
+    padding: 0.3rem;
 }
-#rodape{
-    padding-left: 15px;
-    padding-right: 15px;
+
+#rodape {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+}
+
+.container {
+    overflow: hidden;
 }
 
 
 /*3 - Foto do campus*/ 
-   #foto-principal {
-	height: 350px;
-	background: #b6b6b623 url("../imagens/foto_ifsul.jpg") repeat;
+
+#foto-principal {
+height: 50%;
+background: #b6b6b623 url("../imagens/foto_ifsul.jpg") repeat;
 }
 
 
+/*Estilizando as imagens dos cursos*/
+
+.img-cursos {
+    float: right;
+    width: 30%;
+    padding-right: 1.8rem;
+    padding-bottom: 1.8rem;
+    border-radius: 1.8rem;
+}
 
 
- /*4 - rodape-fora ocupar toda largura ver HTML*/ 
+/*4 - rodape-fora ocupar toda largura ver HTML*/ 
+
 #rodape {
     background: #171717;
-    
 }
-
-
 
 
 /*5 - Cabeçalho com posicionamento relativo */
+
 #cabecalho {
 	position: relative;
 }
 
 
-
 /* 6 - Flutuar a logomarca para a esquerda - logo */
+
 #logo {
-    padding: 5px 0;
+    padding: 0.3rem 0;
     display: block;
 }
 
@@ -156,20 +142,17 @@ overflow: hidden;
 }
 
 
-
-
-
 /* 8 - Posicionando o menu principal */
+
 #menu-principal {
 	position: absolute;
-	top: 26px;
+	top: 1.6rem;
 	right: 0;
 }
 
 
-
-
 /*9 - Estilizando o menu principal - menu-pricipal*/
+
 #menu-principal li {
     display: inline;
     margin-left: 0.5rem;
@@ -178,16 +161,16 @@ overflow: hidden;
 #menu-principal a {
     display: block;
     float: left;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-decoration: none;
     color: #333333;
-    margin-left: 32px;
+    margin-left: 2rem;
     font-weight: bold;
 }
 
 
-
 /*10 - Estilizando o menu principal  - menu-pricipal hover e ativo*/ 
+
 #menu-principal a:hover, #menu-principal a.ativo {
     color: green;
     text-decoration: underline;
@@ -198,36 +181,37 @@ overflow: hidden;
 }
 
 
-
 /*11 - Dividir em duas partes: conteúdo principal e conteúdo secundário*/
 
-
 #conteudo {
-    margin: 30px auto;
+    margin: 1.8rem auto;
 }
 
 #conteudo-principal {
     float: left;
-    width: 620px;
-    padding: 20px;
+    width: 65%;
+    padding: 1.2rem;
     color: white;
 }
 
 #conteudo-secundario {
     float: right;
-    width: 280px;
+    width: 26%;
 }
-
 
 
 /*12 - Estilizando rodapé.*/
 
+#rodape {
+    bottom: 0;
+
+}
 
 #telefone-email {
     float: left;
-    font-size: 16px;
+    font-size: 1rem;
     color: #FFF;
-    margin: 12px 0;
+    margin: 0.7rem 0;
 }
 
 #telefone-email span.ddd {
@@ -238,15 +222,15 @@ overflow: hidden;
     float: right;
     text-align: right;
     color: #FFF;
-    font-size: 14px;
-    margin: 12px 0;
+    font-size: 0.8rem;
+    margin: 0.7rem 0;
 }
 
 
-
 /*13 - Estilizando rodapé - parte 02*/
+
 #copyright {
-    font-size: 11px;
+    font-size: 0.6rem;
     color: #d9d9d9;
     clear: both;
     display: block;
@@ -255,84 +239,76 @@ overflow: hidden;
 }
 
 
-
-
-
-/*
--- Estilos específicos de Seção
-*/
+/*-- Estilos específicos de Seção*/
 
 /*11 - Colocar a cor de fundo menu secundário:  parte 02 */
 
-#bd-home #conteudo-secundario {
+#conteudo-secundario, #conheca-cursos {
     background: rgba(128, 128, 128, 0.263);
     color: #FFF;
-    padding: 5px;
-    border-radius: 10px;
+    padding: 0.3rem;
+    border-radius: 0.6rem;
 }
 
 #conheca-cursos {
-    padding: 5px;
     background-color: rgba(0, 128, 0, 0.326);
     text-decoration: none;
-    color: whitesmoke;
-    border-radius: 10px;
 }
+
 #conheca-cursos a:hover {
  background-color: rgba(255, 255, 255, 0.597);
  color:black;
 }
 
 
-
 /*11 - Colocar a cor amarela no Saiba Mais:  parte 03 */ 
+
 #bd-home #conteudo-secundario a {
     color: rgba(0, 128, 0, 0.878);
 }
+
 #bd-home #conteudo-secundario a:hover {
 color: rgb(132, 132, 132);
 }
 
 
+/*-- Formulários*/
 
-
-/*
--- Formulários
-*/
-#cursos ul{
+#cursos ul {
     font-weight: bold; 
-    font-size: 20px;
+    font-size: 1.5rem;
     text-decoration: underline;      
 }
-label{
-    font-size: 20px;
+
+label {
+    font-size: 1.5rem;
     text-align: center;
 }
-.formulario, h1{
+
+.formulario, h1 {
     display: flex; justify-content: center;
     align-items: center;
     padding: 1rem;
 }
-input, textarea{
-    border-radius: 10px;
+
+input, textarea {
+    border-radius: 0.6rem;
     padding: 0.5rem;
 }
-#enviar{
-    margin-top: 20px;
-    margin-bottom: 69.5px;
 
+#enviar {
+    margin-top: 1.2rem;
+    margin-bottom: 4.3rem;
 }
 
-/*
--- Tabelas
-*/
+/*-- Tabelas*/
 
-/*
--- Classes de Uso Geral
-*/
+
+/*-- Classes de Uso Geral*/
 
 
 /* 7 -  Para que a flutuação da Logo  seja finalizada - grupo */ 
+
  .grupo::before, .grupo::after  {
     content: " ";
     display: block;
