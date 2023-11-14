@@ -1,0 +1,225 @@
+/* Css - Livros Sul */
+/* Resetando os padrões */
+
+*{margin: 0; padding: 0;}        
+ul {list-style-type: none;}       
+img, fieldset {border: 0;}        
+h1, h2, h3, h4, h5, h6 {font-weight: normal;
+box-sizing: border-box;}
+
+/* Estilizando as fontes */
+body{
+    font-family: Geneva, Tahoma, sans-serif;
+    background-color: rgba(2, 23, 101, 0.911);
+    color: white;
+}
+
+/*Estilizando o cabeçalho */
+.cabecalho {
+    background-color: rgba(240, 248, 255, 0.352);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo {
+    padding: 5px 0;
+    display: block;
+}
+#cabecalho-menu{
+    position: absolute;
+    top: 26px;
+    right: 0;
+}
+
+/*Estilizando o nav */
+a{
+    color: rgba(154, 154, 154, 0.692);
+    text-decoration: none;
+}
+a:hover {
+    color: #0097f6;
+    text-decoration:double;
+}
+nav li{
+    display: inline;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    margin-right: 15px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* Estilizando as imagens */
+#logo img{
+    display: block;
+    width: 22rem;
+}
+.img-feira, .img-sobre img, .img-estado{
+    height: 80%;
+    width: 80%;
+    margin-left: 4rem;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+.img-sobre img {
+    display: block; 
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.img-estado {
+    width: 60%;
+    height: 85%;
+}
+
+/*No menu indicar a
+página ativa com destaque*/
+a:visited, a:active{
+    text-decoration: underline;
+}
+
+
+/* dividindo em a tela em 2 */
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;  
+    grid-template-rows: 70vh;
+    align-items: center;
+}
+
+/*estilizando os conteúdos */
+.info h1, .info-segundo h1, .cidades h1, .contato h1{
+   text-align: center ;
+   font-size: 230%;
+   padding-bottom: 1rem;
+}
+.info p, .info-segundo p, ol, .info-aparte p{
+    font-size: 120%;
+    text-align: justify;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    margin-bottom: 1rem;
+}
+.info u{
+    color: #0097f6;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+u{
+    white-space: nowrap;
+    overflow: hidden;
+}
+.info-segundo h1{
+    padding-top: 0.9rem;
+}
+.info-aparte p{
+    background-color: rgba(0, 0, 0, 0.349);
+    text-align: justify;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+/*Estilizando a tabela*/
+/*Página 1*/
+.tabela{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+    border-collapse: collapse;
+    color: rgb(199, 199, 199);
+}
+.cabecalho-tabela th{
+    padding: 0.5rem;
+    background-color: #0098f67f;
+}
+.rodape-tabela{
+    background-color: rgba(240, 248, 255, 0.778);
+    color: black;
+}
+td{
+    padding: 0.3rem;
+}
+caption{
+    text-decoration: underline;
+    padding-bottom: 0.3rem;
+}
+
+/*Estilizando a lista Ordenada*/
+/*Página 2*/
+ol{
+    padding: 1rem;
+    margin: 0 auto;
+    margin-left: 20rem;
+}
+/*número pares*/
+ol li:nth-child(even){
+    color: #0098f67f;
+}
+
+/*números ímpares*/
+ol li:nth-child(odd){
+    color: rgba(240, 248, 255, 0.778);
+}
+
+/*Estilizando o formulário*/
+/*Página 3*/
+.contato{
+    text-align: center;
+}
+label{
+    font-size: 120%;
+}
+legend{
+    font-size: 180%;
+    text-align: center;
+}
+input, select, textarea{
+    border-radius: 20px;
+    margin-left: 1%;
+    padding: 0.3rem;
+}
+input:hover, select:hover, textarea:hover{
+    background-color: #0098f6;
+}
+label{
+    display: block;
+    margin-bottom: 0.5rem;
+    align-items: center;
+} 
+.botoes input, .botoes button{
+    border-color: white;
+    background-color: #0098f6;
+    border-radius: 20px;
+    color: white;
+    padding: 5px;
+}
+.botoes{
+    margin-left: 20rem;
+    margin-bottom: 1rem;
+}
+input[type="checkbox"], input[type="radio"] {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+/* estilizando o rodapé*/
+#rodape {
+    background-color: rgba(240, 248, 255, 0.352);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
