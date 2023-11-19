@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/Livro-Logo.png" type="image/x-icon">
+    <title>Livros Sul</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <a href="index.html" id="logo">
+        <img src="img/livro-nav.png" alt="Imagem de um livro com botão para voltar à página inicial">
+        </a>
+        <nav class="cabecalho-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pag1.html">Sobre</a></li>
+                <li><a href="pag2.html">Localidades</a></li>
+                <li><a class="ativo" href="pag3.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contato">
+            <h1>Entre em contato conosco</h1>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <form action="#" method="post">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="campo">
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade">
+                </div>
+
+                <fieldset>
+                    <div class="campo">
+                        <label for="estado">De qual estado você é:</label>
+                        <select name="estado" id="estado">
+                            <option value="#">--</option>
+                            <option value="">Rio Grande do Sul</option>
+                            <option value="">Santa Catarina</option>
+                            <option value="">Paraná</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="mensagem">Deixe aqui a sua mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="40" rows="10"></textarea>
+                </div>
+
+                <div class="campo-selecao">
+                    <label> Gostaria de receber atualizações via e-mail? </label>
+                    <input type="checkbox" name="atualizacoes" id="atualizacoes" value="1">
+                </div>
+
+                <div class="campo">
+                    <label for="visitas">Desejaria que passássemos pela sua cidade?</label>
+                    <label>
+                        <input type="radio" name="visitas" value="sim"> Sim
+                    </label>
+                    <label>
+                        <input type="radio" name="visitas" value="sim"> Não
+                    </label>
+                    <label>
+                        <input type="radio" name="visitas" value="sim"> Talvez
+                    </label>
+                </div>
+            </fieldset>
+
+                <p class="botoes">
+                    <input type="reset" value="Cancelar" />
+                    <input type="submit" value="Enviar" />
+                </p>
+                </form>
+        </section>
+        <aside>
+            <div class="info-aparte">
+                <p>Espaço destinado para nossa amostra de livros e propagandas para manter o site, além de demais elementos que possam cativar o público.</p>
+            </div>
+        </aside>
+    </main>
+    <footer id="rodape">
+        <div id="email"><p>Email: lucasduarte.pl008@academico.ifsul.edu.br</p></div>
+        <div id="copy"><p>&copy; Livros Sul - Todos os direitos reservados.</p></div>
+        <div id="telefone"><p>Telefone: +55 (53) 984790677</p></div>
+    </footer>
+</body>
+</html>

@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6 {font-weight: normal;
 box-sizing: border-box;}
 
 /* Estilizando as fontes */
-body{
+body {
     font-family: Geneva, Tahoma, sans-serif;
     background-color: rgba(2, 23, 101, 0.911);
     color: white;
@@ -25,14 +25,14 @@ body{
     padding: 5px 0;
     display: block;
 }
-#cabecalho-menu{
+#cabecalho-menu {
     position: absolute;
     top: 26px;
     right: 0;
 }
 
 /*Estilizando o nav */
-a{
+a {
     color: rgba(154, 154, 154, 0.692);
     text-decoration: none;
 }
@@ -40,7 +40,7 @@ a:hover {
     color: #0097f6;
     text-decoration:double;
 }
-nav li{
+nav li {
     display: inline;
     padding: 5px;
     font-size: 20px;
@@ -59,13 +59,16 @@ nav ul li a {
     color: white;
     font-weight: bold;
     transition: 0.3s;
+}a.ativo {
+    text-decoration: underline;
 }
+
 /* Estilizando as imagens */
-#logo img{
+#logo img {
     display: block;
     width: 22rem;
 }
-.img-feira, .img-sobre img, .img-estado{
+.img-feira, .img-sobre img, .img-estado {
     height: 80%;
     width: 80%;
     margin-left: 4rem;
@@ -84,15 +87,8 @@ nav ul li a {
     height: 85%;
 }
 
-/*No menu indicar a
-página ativa com destaque*/
-a:visited, a:active{
-    text-decoration: underline;
-}
-
-
 /* dividindo em a tela em 2 */
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr ;  
     grid-template-rows: 70vh;
@@ -100,33 +96,33 @@ a:visited, a:active{
 }
 
 /*estilizando os conteúdos */
-.info h1, .info-segundo h1, .cidades h1, .contato h1{
+.info h1, .info-segundo h1, .cidades h1, .contato h1 {
    text-align: center ;
    font-size: 230%;
    padding-bottom: 1rem;
 }
-.info p, .info-segundo p, ol, .info-aparte p{
+.info p, .info-segundo p, ol, .info-aparte p {
     font-size: 120%;
     text-align: justify;
     padding-left: 10rem;
     padding-right: 10rem;
     margin-bottom: 1rem;
 }
-.info u{
+.info u {
     color: #0097f6;
     padding-left: 10rem;
     padding-right: 10rem;
 }
-u{
+u {
     white-space: nowrap;
     overflow: hidden;
 }
-.info-segundo h1{
+.info-segundo h1 {
     padding-top: 0.9rem;
 }
-.info-aparte p{
+.info-aparte p {
     background-color: rgba(0, 0, 0, 0.349);
-    text-align: justify;
+    text-align: center;
     margin-left: 6rem;
     margin-right: 6rem;
     padding: 1rem;
@@ -135,79 +131,79 @@ u{
 
 /*Estilizando a tabela*/
 /*Página 1*/
-.tabela{
+.tabela {
     margin: 0 auto;
     text-align: center;
     width: 70%;
     border-collapse: collapse;
     color: rgb(199, 199, 199);
 }
-.cabecalho-tabela th{
+.cabecalho-tabela th {
     padding: 0.5rem;
     background-color: #0098f67f;
 }
-.rodape-tabela{
+.rodape-tabela {
     background-color: rgba(240, 248, 255, 0.778);
     color: black;
 }
-td{
+td {
     padding: 0.3rem;
 }
-caption{
+caption {
     text-decoration: underline;
     padding-bottom: 0.3rem;
 }
 
 /*Estilizando a lista Ordenada*/
 /*Página 2*/
-ol{
+ol {
     padding: 1rem;
     margin: 0 auto;
     margin-left: 20rem;
 }
 /*número pares*/
-ol li:nth-child(even){
+ol li:nth-child(even) {
     color: #0098f67f;
 }
 
 /*números ímpares*/
-ol li:nth-child(odd){
+ol li:nth-child(odd) {
     color: rgba(240, 248, 255, 0.778);
 }
 
 /*Estilizando o formulário*/
 /*Página 3*/
-.contato{
+.contato {
     text-align: center;
 }
-label{
+label {
     font-size: 120%;
 }
-legend{
+legend {
     font-size: 180%;
     text-align: center;
 }
-input, select, textarea{
+input, select, textarea {
     border-radius: 20px;
     margin-left: 1%;
     padding: 0.3rem;
 }
-input:hover, select:hover, textarea:hover{
+input:hover, select:hover, textarea:hover {
     background-color: #0098f6;
 }
-label{
+label {
     display: block;
     margin-bottom: 0.5rem;
     align-items: center;
 } 
-.botoes input, .botoes button{
+.botoes input, .botoes button {
     border-color: white;
     background-color: #0098f6;
     border-radius: 20px;
     color: white;
     padding: 5px;
 }
-.botoes{
+.botoes {
     margin-left: 20rem;
     margin-bottom: 1rem;
 }
